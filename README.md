@@ -6,7 +6,7 @@ Here's a cleaned-up version with clearer structure and wording:
 
 ## Background
 
-When Claude Code runs inside WSL, Playwright MCP tries to launch a browser within the Linux environment. Since browser stays installed on the Windows side (not inside WSL), Playwright can't find one — or it launches an invisible browser that you can't see or interact with.
+When Claude Code runs inside WSL, Playwright MCP tries to launch a browser within the Linux environment. Since browser stays installed on the Windows side (not inside WSL), Playwright can't find one — or it launches an invisible browser inside WSL that you can't see or interact with.
 
 The fix is to run the Playwright MCP server through `cmd.exe` so it runs on the Windows side, where Chrome is already installed.
 
